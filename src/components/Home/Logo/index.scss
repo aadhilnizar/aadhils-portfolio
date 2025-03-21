@@ -1,0 +1,51 @@
+.logo-container {
+  z-index: 0;
+  width: 500px;
+  height: 609px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  animation: zoomInDown 2.5s ease-in-out 1s;
+  user-select: none;
+
+  svg {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    transform: rotateZ(30deg) !important;
+  }
+
+  .solid-logo {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    opacity: 1;
+    transform: rotateZ(30deg) !important;
+    z-index: 1;
+  }
+}
+
+.svg-container {
+  stroke: #ffd700;
+  stroke-width: 10;
+}
+@media (max-width: 480px) {
+  .logo-container {
+    width: 100px; // Reduce the width for smaller screens
+    height: auto; // Adjust height to maintain aspect ratio
+    right: 10%; // Adjust positioning to fit the screen
+    left: 10%; // Adjust positioning to fit the screen
+
+    .solid-logo {
+      width: 50%; // Ensure the logo scales within the container
+    }
+  }
+}

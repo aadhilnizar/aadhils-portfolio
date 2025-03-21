@@ -1,0 +1,48 @@
+html {
+  font-size: 62.5%; /* Base font size for easy rem calculations (1rem = 10px) */
+}
+
+body {
+  margin: 0;
+  font:
+    300 11px/1.4 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000000;
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  body {
+    font-size: 10px; /* Slightly smaller font size for large screens */
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 9px; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 8px; /* Adjust font size for tablets */
+    overflow: auto; /* Allow scrolling on smaller devices */
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 7px; /* Adjust font size for mobile devices */
+  }
+}
+
+/* Optional: Adjust layout or other properties for specific screen sizes */
+@media (max-width: 480) {
+  /* Example: Adjust padding or margins for smaller screens */
+  body {
+    padding: 10px;
+  }
+}
